@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Miner Dao Forum
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Discussion forum for Miner Dao. The React app covers posts, comments, polls, profiles, and admin review. The Express API stores data in MongoDB and can serve the production build.
 
-## Available Scripts
+## Project layout
 
-In the project directory, you can run:
+- `src/` — React client
+- `server/` — Express API, Mongoose models, and routes
+- `public/` — static HTML and manifest
+- `config-overrides.js` — Create React App webpack overrides
 
-### `yarn start`
+## Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+From the project root:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+npm start
+```
 
-### `yarn test`
+The app opens at [http://localhost:3000](http://localhost:3000).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Other scripts:
 
-### `yarn build`
+- `npm run build` — production build
+- `npm test` — tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+From `server/`:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+npm run dev
+```
 
-### `yarn eject`
+The API listens on `PORT`, or port `4000` when `PORT` is not set. `npm start` runs the server without nodemon.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Main areas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Auth: signup, login, email verification, password reset
+- Discussions: create, edit, like, search, categories
+- Comments and replies, including mentions
+- Polls and votes
+- User profile: posts, likes, votes, mentions
+- Admin: pending, approved, and rejected posts
+- Wallet connect on BSC testnet

@@ -13,13 +13,13 @@ const Loader = () => {
       [blue.current, yellow.current],
       0.5,
       { y: 18 },
-      { y: -18, yoyo: true, repeat: -1 }
+      { y: -18, yoyo: true, repeat: -1 },
     );
     gsap.fromTo(
       [red.current, green.current],
       0.5,
       { y: -18 },
-      { y: 18, repeat: -1, yoyo: true }
+      { y: 18, repeat: -1, yoyo: true },
     );
   }, []);
   return (

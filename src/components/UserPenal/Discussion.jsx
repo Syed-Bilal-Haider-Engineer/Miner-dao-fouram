@@ -116,7 +116,7 @@ function Discussion({ id }) {
                                       fontSize="13px"
                                     >
                                       {moment(items?.ref_id?.addedAt).format(
-                                        "LL"
+                                        "LL",
                                       )}
                                     </Typography>
                                     <Typography

@@ -39,7 +39,7 @@ export const VotePoll = async (req, res, next) => {
     const { poll_id, answer_id, user_id } = req.body;
     const voteAnswer = await pollModal.findOneAndUpdate(
       { _id: poll_id, "answers._id": answer_id },
-      { $push: { "answers.$.vote": user_id } }
+      { $push: { "answers.$.vote": user_id } },
     );
     await pollModal.findByIdAndUpdate(voteAnswer._id, {
       totalvote: voteAnswer.totalvote + 1,

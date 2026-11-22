@@ -66,7 +66,7 @@ function Pending({ pendingpost, func, state }) {
           pendingpost
             ?.slice(
               currentPage * postsPerPage - postsPerPage,
-              currentPage * postsPerPage
+              currentPage * postsPerPage,
             )
             ?.map(
               ({ _id, addedAt, description, status, user, tag, title }, i) => {
@@ -201,7 +201,7 @@ function Pending({ pendingpost, func, state }) {
                     </Box>
                   </Box>
                 );
-              }
+              },
             )}{" "}
         {pendingpost?.length > 0 ? (
           <Box my="15px" mx="10" px>

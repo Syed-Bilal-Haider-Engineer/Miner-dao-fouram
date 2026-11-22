@@ -159,7 +159,7 @@ function Poll({ polldetails, user_id, checkedfunc }) {
                                 pollApproveUnapprove(
                                   polldetails?._id,
                                   _id,
-                                  user_id
+                                  user_id,
                                 );
                               }}
                             />
@@ -170,7 +170,7 @@ function Poll({ polldetails, user_id, checkedfunc }) {
                                 pollApproveUnapprove(
                                   polldetails?._id,
                                   _id,
-                                  user_id
+                                  user_id,
                                 );
                               }}
                             />
@@ -184,7 +184,7 @@ function Poll({ polldetails, user_id, checkedfunc }) {
                                 ? pollApproveUnapprove(
                                     polldetails?._id,
                                     _id,
-                                    user_id
+                                    user_id,
                                   )
                                 : setOpenlogin(true);
                             }

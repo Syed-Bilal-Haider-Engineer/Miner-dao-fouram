@@ -285,7 +285,7 @@ function Post({ username, id }) {
                                     onClick={() => {
                                       CommentHandler(
                                         items?.ref_id?._id,
-                                        items?.ref_id?.description
+                                        items?.ref_id?.description,
                                       );
                                     }}
                                     sx={{ cursor: "pointer" }}
@@ -343,7 +343,7 @@ function Post({ username, id }) {
                                           onClick={() => {
                                             editeHandler(
                                               items?.ref_id?._id,
-                                              items?.description
+                                              items?.description,
                                             );
                                           }}
                                           disableRipple

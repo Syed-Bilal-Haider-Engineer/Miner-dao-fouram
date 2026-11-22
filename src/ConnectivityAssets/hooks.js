@@ -9,7 +9,7 @@ import { Alert, Snackbar } from "@mui/material";
 let walletAddress = "0x8ba1f109551bD432803012645Ac136ddd64DBA72";
 
 const provider = new ethers.providers.JsonRpcProvider(
-  "https://data-seed-prebsc-1-s1.binance.org:8545/"
+  "https://data-seed-prebsc-1-s1.binance.org:8545/",
 );
 
 export const voidAccount = new ethers.VoidSigner(walletAddress, provider);

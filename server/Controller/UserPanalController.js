@@ -36,7 +36,6 @@ export const FetchPosts = async (req, res) => {
                     modal: commentModal,
                     match: { visibility: true },
                   },
-
                 ],
               },
             ],
