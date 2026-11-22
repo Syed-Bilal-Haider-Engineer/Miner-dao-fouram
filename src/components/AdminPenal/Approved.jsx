@@ -162,7 +162,7 @@ function Approved({ Approvedstate, func, state }) {
                   </Box>
                 </Box>
               );
-            }
+            },
           )}
         {Approvedstate?.length == 0 && (
           <Typography

@@ -94,7 +94,7 @@ function Commonpage(props) {
         alldetailsstate
           ?.slice(
             currentPage * postsPerPage - postsPerPage,
-            currentPage * postsPerPage
+            currentPage * postsPerPage,
           )
           .map((items, i) => {
             return (

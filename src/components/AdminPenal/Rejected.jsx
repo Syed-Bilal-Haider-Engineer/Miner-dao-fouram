@@ -168,7 +168,7 @@ export default function Rejected({ rejected, func, state }) {
                 </Box>
               </Box>
             );
-          }
+          },
         )}{" "}
       {rejected.length == 0 && (
         <Typography

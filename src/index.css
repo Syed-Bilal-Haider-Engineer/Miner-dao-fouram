@@ -1,16 +1,16 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #d7d6f7 !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .active {
@@ -175,14 +175,13 @@ code {
   }
 }
 
-
-.rdw-editor-toolbar{
+.rdw-editor-toolbar {
   padding: 20px 10px !important;
-  background-color: #4915B0 !important;
+  background-color: #4915b0 !important;
   /* border-radius: 10px !important; */
 }
 
-.rdw-editor-main{
+.rdw-editor-main {
   padding: 30px 10px !important;
- /* border-bottom: white solid !important; */
+  /* border-bottom: white solid !important; */
 }

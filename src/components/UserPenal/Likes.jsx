@@ -120,7 +120,7 @@ export default function Like({ id }) {
                                         fontSize="13px"
                                       >
                                         {moment(items?.ref_id?.addedAt).format(
-                                          "LL"
+                                          "LL",
                                         )}
                                       </Typography>
                                       <Typography

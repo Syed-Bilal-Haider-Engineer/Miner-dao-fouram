@@ -124,7 +124,7 @@ function Forgetpassord() {
         const passwordvalue = { password: userstate.password };
         const { data } = await axios.post(
           `${url}/resetpassword/${id}/${token}`,
-          passwordvalue
+          passwordvalue,
         );
         if (data.status === true) {
           toast.success(data.message);

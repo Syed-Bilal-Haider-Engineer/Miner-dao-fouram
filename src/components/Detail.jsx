@@ -132,7 +132,7 @@ export default function Detail({ userId, username }) {
       if (user_id) {
         setLoading(true);
         const { data } = await axios.get(
-          `${url}/checklike/${param?.id}/${user_id}`
+          `${url}/checklike/${param?.id}/${user_id}`,
         );
         console.log("status:", data);
         if (data.status) {
@@ -856,14 +856,14 @@ export default function Detail({ userId, username }) {
                                         </Box>
                                       </>
                                     );
-                                  }
+                                  },
                                 )}
                             </Box>
                           </div>
                         )}
                       </>
                     );
-                  }
+                  },
                 )}
               </Box>
             );

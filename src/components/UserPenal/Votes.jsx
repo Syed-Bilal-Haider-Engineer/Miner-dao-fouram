@@ -47,7 +47,7 @@ export default function Vote({ id }) {
           votestate
             ?.slice(
               currentPage * postsPerPage - postsPerPage,
-              currentPage * postsPerPage
+              currentPage * postsPerPage,
             )
             ?.map(({ poll }, i) => {
               return (

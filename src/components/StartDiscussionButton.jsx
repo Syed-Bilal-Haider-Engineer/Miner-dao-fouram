@@ -65,7 +65,7 @@ function StartDiscussionButton({ setOpenlogin }) {
   });
   //-------------------------------editor States--------------------------------
   const [editorState, setEditorState] = useState(() =>
-    EditorState.createEmpty()
+    EditorState.createEmpty(),
   );
   const [convertedContent, setConvertedContent] = useState(null);
   const handleEditorChange = (state) => {

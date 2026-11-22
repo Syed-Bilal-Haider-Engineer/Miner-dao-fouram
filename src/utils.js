@@ -110,7 +110,7 @@ export const AppContextProvider = ({ children }) => {
       });
       window.location.reload();
     },
-    [state.provider]
+    [state.provider],
   );
   React.useEffect(() => {
     if (state.provider?.on) {
@@ -133,7 +133,7 @@ export const AppContextProvider = ({ children }) => {
         if (state.provider.removeListener) {
           state.provider.removeListener(
             "accountsChanged",
-            handleAccountsChanged
+            handleAccountsChanged,
           );
           state.provider.removeListener("chainChanged", handleChainChanged);
           state.provider.removeListener("disconnect", handleDisconnect);
